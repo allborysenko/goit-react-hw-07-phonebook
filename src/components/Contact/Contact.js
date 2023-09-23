@@ -6,7 +6,7 @@ import { Label, Input, Button } from './Contact.styled';
 
 export const Contact = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(state => state.contacts);
+  const contacts = useSelector(state => state.contacts.items);
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
@@ -65,4 +65,3 @@ export const Contact = () => {
     </form>
   );
 };
-
