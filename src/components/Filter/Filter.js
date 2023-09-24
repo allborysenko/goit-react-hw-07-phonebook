@@ -1,4 +1,4 @@
-import { Label, Input } from './Filter.styled';
+import { Label, Input, Total } from './Filter.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { createFilter } from 'redux/filterSlice';
 import { contactSelectors } from 'redux/index';
@@ -6,6 +6,7 @@ import { contactSelectors } from 'redux/index';
 export const Filter = () => {
   const dispatch = useDispatch();
   const filter = useSelector(contactSelectors.getFilter);
+  const totalContacts = useSelector(contactSelectors.totalContacts);
 
   const handleInputChange = event => {
     dispatch(createFilter(event.target));
@@ -21,6 +22,7 @@ export const Filter = () => {
         value={filter}
         onChange={handleInputChange}
       />
+      <Total>You have {totalContacts} contacts </Total>
     </div>
   );
 };

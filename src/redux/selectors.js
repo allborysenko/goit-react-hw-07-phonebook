@@ -13,3 +13,7 @@ export const filteredContacts = createSelector(
     });
   }
 );
+
+export const totalContacts = createSelector([getContacts], contacts => {
+  return contacts.length;
+});

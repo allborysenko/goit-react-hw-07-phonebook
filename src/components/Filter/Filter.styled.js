@@ -20,3 +20,12 @@ export const Input = styled.input`
   outline: none;
   border-radius: 10px;
 `;
+
+export const Total = styled.p`
+  font-style: italic;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000;
+`;
