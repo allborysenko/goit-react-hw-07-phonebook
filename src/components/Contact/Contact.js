@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { createContact } from '../../redux/contactSlise';
+import { createContact } from 'redux/operations';
 import { Label, Input, Button } from './Contact.styled';
 
 export const Contact = () => {
