@@ -9,7 +9,7 @@ export const Filter = () => {
   const totalContacts = useSelector(contactSelectors.totalContacts);
 
   const handleInputChange = event => {
-    dispatch(createFilter(event.target));
+    dispatch(createFilter(event.target.value));
   };
 
   return (
