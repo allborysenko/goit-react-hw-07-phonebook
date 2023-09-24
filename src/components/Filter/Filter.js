@@ -1,6 +1,6 @@
 import { Label, Input } from './Filter.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { createFilter } from '../../redux/filterSlice';
+import { createFilter } from 'redux/filterSlice';
 import { contactSelectors } from 'redux/index';
 
 export const Filter = () => {
@@ -8,8 +8,7 @@ export const Filter = () => {
   const filter = useSelector(contactSelectors.getFilter);
 
   const handleInputChange = event => {
-    const { value } = event.target;
-    dispatch(createFilter(value));
+    dispatch(createFilter(event.target));
   };
 
   return (
