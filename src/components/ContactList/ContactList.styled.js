@@ -13,9 +13,10 @@ export const List = styled.li`
   list-style: none;
   color: #000;
   font-weight: 600;
+ 
 `;
 export const Button = styled.button`
-  /* width: 100px; */
+  max-width: 100px;
   padding: 5px;
   margin: 5px 10px;
   font-size: 14px;
