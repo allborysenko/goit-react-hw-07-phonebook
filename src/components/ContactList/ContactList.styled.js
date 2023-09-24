@@ -15,8 +15,8 @@ export const List = styled.li`
   font-weight: 600;
 `;
 export const Button = styled.button`
-  width: 100px;
-  padding: 3px;
+  /* width: 100px; */
+  padding: 5px;
   margin: 5px 10px;
   font-size: 14px;
   font-weight: bold;
