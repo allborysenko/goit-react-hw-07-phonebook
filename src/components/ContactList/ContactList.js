@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from 'redux/operations';
 import { Wrapper, List, Button } from './ContactList.styled';
-
 import { contactSelectors } from 'redux/index';
 
 export const ContactList = () => {
